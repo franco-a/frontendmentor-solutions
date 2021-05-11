@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+// VARIABLES
+$dark-cyan: hsl(185, 75%, 39%);
+$dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-gray-blue: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+$white: rgb(255, 255, 255);
+$fw-reg: 400;
+$fw-bold: 700;
+$ff-default: 'Kumbh Sans', sans-serif;
+$fs-l: 1.8rem;
+$fs-m: 1.4rem;
+$fs-s: 1.0rem;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    background: $dark-cyan;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+	background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
+    font-size: 62.5%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card {
+    background-color: $white;
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $ff-default;
+    border-radius: 15px;
+    overflow: hidden;
+    min-width: 326px;
+    max-width: 326px;
+    min-height: 374px;
+    max-height: 374px;
+    text-align: center;
+
+    &__top {
+        width: 100%;
+    }
+
+    &__pattern {
+        max-height: 140px;
+    }
+
+    &__pfp {
+        border-radius: 100%;
+        border: solid 5px $white;
+        margin-top: -48px;
+    }
+
+    &__stats {
+        border-top: 1px solid $dark-gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: auto;
+        width: 100%;
+    }
+
+    &__status {
+        padding-block: 24px;
+    }
+
+    &__user,
+    &__num {
+        font-size: $fs-l;
+    }
+
+    &__name,
+    &__num {
+        color: $dark-desaturated-blue;
+        font-weight: $fw-bold;
+    }
+
+    &__age,
+    &__location,
+    &__target {
+        color: $dark-gray-blue;
+        font-weight: $fw-reg;
+    }
+
+    &__user {
+        margin-top: 19px;
+    }
+
+    &__location {
+        font-size: $fs-m;
+        margin-top: 8px;
+        margin-bottom: 28px;
+    }
+
+    &__target {
+        font-size: $fs-s;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-card {
+        min-width: 350px;
+        max-width: 350px;
+    }
+}
