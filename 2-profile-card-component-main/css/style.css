@@ -61,11 +61,11 @@ body {
 .profile-card__pfp {
   border-radius: 100%;
   border: solid 5px white;
-  margin-top: -48px;
+  margin-top: -50px;
 }
 
 .profile-card__stats {
-  border-top: 1px solid #969696;
+  border-top: 1px solid rgba(150, 150, 150, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,6 +109,7 @@ body {
 }
 
 .profile-card__target {
+  margin-top: 9px;
   font-size: 1rem;
 }
 

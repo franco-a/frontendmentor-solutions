@@ -4,7 +4,7 @@
 $dark-cyan: hsl(185, 75%, 39%);
 $dark-desaturated-blue: hsl(229, 23%, 23%);
 $dark-gray-blue: hsl(227, 10%, 46%);
-$dark-gray: hsl(0, 0%, 59%);
+$dark-gray: hsla(0, 0%, 59%, 0.2);
 $white: rgb(255, 255, 255);
 $fw-reg: 400;
 $fw-bold: 700;
@@ -59,7 +59,7 @@ body {
     &__pfp {
         border-radius: 100%;
         border: solid 5px $white;
-        margin-top: -48px;
+        margin-top: -50px;
     }
 
     &__stats {
@@ -104,6 +104,7 @@ body {
     }
 
     &__target {
+        margin-top: 9px;
         font-size: $fs-s;
     }
 }
