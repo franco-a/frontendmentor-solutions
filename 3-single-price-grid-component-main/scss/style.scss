@@ -1,0 +1,122 @@
+@use './base';
+@use './desktop';
+@use './variables' as *;
+
+.pricing {
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-weight: $fw-reg;
+  overflow: hidden;
+  margin-top: 72px;
+  margin-bottom: 62px;
+
+  &__heading {
+    color: $cyan;
+    font-size: $fs-l;
+    margin-top: 28px;
+    margin-bottom: 24px;
+  }
+
+  &__subheading {
+    font-size: $fs-ml;
+    margin-top: 24px;
+    margin-bottom: 18px;
+
+    &--yellow {
+      color: $bright-yellow;
+      font-size: $fs-ms;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__dollar {
+    font-size: $fs-xxl;
+    margin-right: 11px;
+  }
+
+  &__paragraph {
+    color: $gray-blue;
+  }
+
+  &__paragraph,
+  &__feature {
+    font-size: $fs-s;
+  }
+
+  &__monthly,
+  &__description,
+  &__button {
+    font-size: $fs-m;
+  }
+
+  &__heading,
+  &__subheading,
+  &__dollar,
+  &__button {
+    font-weight: $fw-bold;
+  }
+
+  &__intro {
+    background-color: #fff;
+    min-width: 311px;
+    min-height: 266px;
+    max-width: 311px;
+    max-height: 266px;
+  }
+
+  &__signup {
+    min-height: 228px;
+    min-width: 311px;
+    max-height: 228px;
+    max-width: 311px;
+  }
+
+  &__price-cntnr {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  &__promotion {
+    opacity: 0.8;
+    min-height: 227px;
+    max-height: 227px;
+  }
+
+  &__description {
+    margin-bottom: 26px;
+  }
+
+  &__button {
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: $bright-yellow;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border-radius: 5px;
+  }
+
+  &__intro,
+  &__signup,
+  &__promotion {
+    padding-inline: 24px;
+  }
+
+  &__signup,
+  &__promotion {
+    background-color: $cyan;
+  }
+
+  &__monthly {
+    color: rgba($color: #fff, $alpha: 0.5);
+  }
+
+  &__feature {
+    color: rgba($color: #fff, $alpha: 0.6);
+  }
+}

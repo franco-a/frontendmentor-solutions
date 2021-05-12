@@ -1,0 +1,56 @@
+@media (min-width: 1025px) {
+    html,
+    body {
+      height: 100%;
+    }
+  
+    .pricing {
+      display: grid;
+      grid-template: 218px 259px / repeat(2, 317px);
+      height: auto;
+      width: auto;
+  
+      &__intro {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        min-width: 635px;
+        min-height: 218px;
+        max-width: 635px;
+        max-height: 218px;
+      }
+  
+      &__signup,
+      &__promotion {
+        min-height: 259px;
+        max-width: 317px;
+        max-height: 259px;
+        max-width: 317px;
+      }
+  
+      &__heading,
+      &__subheading {
+        margin-top: 40px;
+      }
+  
+      &__heading {
+        font-size: $fs-xl;
+      }
+  
+      &__subheading--yellow {
+        font-size: $fs-ml;
+        margin-top: 24px;
+        margin-bottom: 11px;
+      }
+  
+      &__paragraph {
+        font-size: $fs-m;
+        margin-right: 40px;
+        margin-bottom: 40px;
+        line-height: 26px;
+      }
+  
+      &__feature {
+        margin-bottom: 3px;
+      }
+    }
+  }

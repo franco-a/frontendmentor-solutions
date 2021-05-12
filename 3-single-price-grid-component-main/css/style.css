@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+html,
+body {
+  background-color: #e5eff5;
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pricing {
+  border-radius: 5px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  overflow: hidden;
+  margin-top: 72px;
+  margin-bottom: 62px;
+}
+.pricing__heading {
+  color: #2ab2af;
+  font-size: 2rem;
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
+.pricing__subheading {
+  font-size: 1.8rem;
+  margin-top: 24px;
+  margin-bottom: 18px;
+}
+.pricing__subheading--yellow {
+  color: #c0df34;
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+.pricing__dollar {
+  font-size: 3.2rem;
+  margin-right: 11px;
+}
+.pricing__paragraph {
+  color: #98a6bd;
+}
+.pricing__paragraph, .pricing__feature {
+  font-size: 1.4rem;
+}
+.pricing__monthly, .pricing__description, .pricing__button {
+  font-size: 1.6rem;
+}
+.pricing__heading, .pricing__subheading, .pricing__dollar, .pricing__button {
+  font-weight: 700;
+}
+.pricing__intro {
+  background-color: #fff;
+  min-width: 311px;
+  min-height: 266px;
+  max-width: 311px;
+  max-height: 266px;
+}
+.pricing__signup {
+  min-height: 228px;
+  min-width: 311px;
+  max-height: 228px;
+  max-width: 311px;
+}
+.pricing__price-cntnr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.pricing__promotion {
+  opacity: 0.8;
+  min-height: 227px;
+  max-height: 227px;
+}
+.pricing__description {
+  margin-bottom: 26px;
+}
+.pricing__button {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #c0df34;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border-radius: 5px;
+}
+.pricing__intro, .pricing__signup, .pricing__promotion {
+  padding-inline: 24px;
+}
+.pricing__signup, .pricing__promotion {
+  background-color: #2ab2af;
+}
+.pricing__monthly {
+  color: rgba(255, 255, 255, 0.5);
+}
+.pricing__feature {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 1025px) {
+  html,
+body {
+    height: 100%;
+  }
+
+  .pricing {
+    display: grid;
+    grid-template: 218px 259px/repeat(2, 317px);
+    height: auto;
+    width: auto;
+  }
+  .pricing__intro {
+    grid-row: 1;
+    grid-column: 1/span 2;
+    min-width: 635px;
+    min-height: 218px;
+    max-width: 635px;
+    max-height: 218px;
+  }
+  .pricing__signup, .pricing__promotion {
+    min-height: 259px;
+    max-width: 317px;
+    max-height: 259px;
+    max-width: 317px;
+  }
+  .pricing__heading, .pricing__subheading {
+    margin-top: 40px;
+  }
+  .pricing__heading {
+    font-size: 2.4rem;
+  }
+  .pricing__subheading--yellow {
+    font-size: 1.8rem;
+    margin-top: 24px;
+    margin-bottom: 11px;
+  }
+  .pricing__paragraph {
+    font-size: 1.6rem;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    line-height: 26px;
+  }
+  .pricing__feature {
+    margin-bottom: 3px;
+  }
+}/*# sourceMappingURL=style.css.map */
