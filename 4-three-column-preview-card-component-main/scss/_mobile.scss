@@ -1,0 +1,54 @@
+@use './variables' as *;
+
+// MOBILE LAYOUT
+.preview {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 327px;
+    max-height: 1326px;
+    overflow: hidden;
+    margin-block: 50px;
+  
+    &__card {
+      width: 100%;
+      min-height: 442px;
+      max-height: 442px;
+      padding-left: 49px;
+      padding-right: 48px;
+      padding-block: 48px;
+  
+      &--orange {
+        background-color: $bright-orange;
+      }
+  
+      &--cyan {
+        background-color: $cyan;
+      }
+  
+      &--dark-cyan {
+        background-color: $dark-cyan;
+      }
+    }
+  
+    &__svg {
+      margin-bottom: 35px;
+    }
+  
+    &__header {
+      color: $light-gray;
+      font-family: $ff-bold;
+      font-weight: $fw-bold;
+      font-size: $fs-xxl;
+      margin-bottom: 25px;
+    }
+  
+    &__description {
+      font-family: $ff-reg;
+      font-weight: $fw-reg;
+      font-size: $fs-m;
+      color: $transparent-white;
+      margin-bottom: 25px;
+      line-height: 25px;
+    }
+}

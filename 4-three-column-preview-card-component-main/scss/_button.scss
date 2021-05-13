@@ -1,0 +1,35 @@
+@use './variables' as *;
+  
+.button {
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+    background-color: $light-gray;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $ff-reg;
+    font-weight: $fw-reg;
+    font-size: $fs-m;
+    width: 100%;
+    min-height: 48px;
+    max-height: 48px;
+    max-width: 146px;
+  
+    &--orange {
+        color: $bright-orange;
+    }
+  
+    &--cyan {
+        color: $cyan;
+    }
+  
+    &--dark-cyan {
+        color: $dark-cyan;
+    }
+
+    &:hover {
+        background-color: transparent;
+        border: 2px solid $white;
+        color: $white;
+    }
+}

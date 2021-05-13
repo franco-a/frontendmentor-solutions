@@ -1,0 +1,25 @@
+@use './variables' as *;
+
+// DESKTOP LAYOUT
+@media (min-width: 1025px) {
+    html,
+    body {
+      height: 100%;
+    }
+  
+    .preview {
+      flex-direction: row;
+      max-width: 920px;
+      max-height: 500px;
+  
+      &__card {
+        max-width: 307px;
+        min-height: 500px;
+        max-height: 500px;
+      }
+  
+      &__description {
+        margin-bottom: 83px;
+      }
+    }
+  }
