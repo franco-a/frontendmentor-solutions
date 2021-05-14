@@ -32,18 +32,15 @@
         grid-area: b;
     }
 
-    &__heading,
-    &__paragraph {
-        color: c.$dark-blue;
-    }
-
     &__heading {
+        color: c.$dark-blue;
         font-weight: f.$fw-bold;
         font-size: f.$fs-l;
         margin-bottom: 2px;
     }
 
     &__paragraph {
+        color: c.$gray-blue;
         font-weight: f.$fw-reg;
         font-size: f.$fs-ms;
         margin-bottom: 33px;

@@ -11,11 +11,11 @@
 
     &__heading,
     &__paragraph {
-        color: c.$dark-blue;
         text-align: center;
     }
 
     &__heading {
+        color: c.$dark-blue;
         font-size: f.$fs-xl;
         margin-bottom: 13px;
 
@@ -29,6 +29,7 @@
     }
 
     &__paragraph {
+        color: c.$gray-blue;
         font-weight: f.$fw-reg;
         font-size: f.$fs-m;
         margin-bottom: 76px;
