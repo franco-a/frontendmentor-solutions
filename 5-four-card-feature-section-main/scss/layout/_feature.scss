@@ -1,0 +1,67 @@
+@use '../utils/colors' as c;
+@use '../utils/font-rules' as f;
+
+.feature {
+    padding-inline: 32px;
+    padding-top: 85px;
+    padding-bottom: 78px;
+
+    &__heading,
+    &__paragraph {
+        color: c.$dark-blue;
+        text-align: center;
+    }
+
+    &__heading {
+        font-size: f.$fs-xl;
+        margin-bottom: 13px;
+
+        &--light {
+            font-weight: f.$fw-light;
+        }
+
+        &--bold {
+            font-weight: f.$fw-bold;
+        }
+    }
+
+    &__paragraph {
+        font-weight: f.$fw-reg;
+        font-size: f.$fs-m;
+        margin-bottom: 76px;
+    }
+
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .feature {
+        padding-block: 80px;
+        padding-inline: 0;
+
+        &__heading {
+            font-size: f.$fs-xxl;
+        }
+
+        &__paragraph {
+            margin-bottom: 64px;
+        }
+
+        &__card-container {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: 
+            '. r .'
+            'c r b'
+            'c o b'
+            '. o .';
+        }
+    }
+}

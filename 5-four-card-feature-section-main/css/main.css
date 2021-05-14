@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.feature {
+  padding-inline: 32px;
+  padding-top: 85px;
+  padding-bottom: 78px;
+}
+.feature__heading, .feature__paragraph {
+  color: #4c4e61;
+  text-align: center;
+}
+.feature__heading {
+  font-size: 2.4rem;
+  margin-bottom: 13px;
+}
+.feature__heading--light {
+  font-weight: 200;
+}
+.feature__heading--bold {
+  font-weight: 600;
+}
+.feature__paragraph {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-bottom: 76px;
+}
+.feature__card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .feature {
+    padding-block: 80px;
+    padding-inline: 0;
+  }
+  .feature__heading {
+    font-size: 3.6rem;
+  }
+  .feature__paragraph {
+    margin-bottom: 64px;
+  }
+  .feature__card-container {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: ". r ." "c r b" "c o b" ". o .";
+  }
+}
+.card {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-top: 4px solid;
+  padding: 28px;
+  border-radius: 8px;
+  max-width: 311px;
+  min-height: 222px;
+}
+.card--cyan {
+  border-color: #45d3d3;
+  grid-area: c;
+}
+.card--red {
+  border-color: #ea5353;
+  grid-area: r;
+}
+.card--orange {
+  border-color: #fcaf4a;
+  grid-area: o;
+}
+.card--blue {
+  border-color: #549ef2;
+  grid-area: b;
+}
+.card__heading, .card__paragraph {
+  color: #4c4e61;
+}
+.card__heading {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 2px;
+}
+.card__paragraph {
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 33px;
+  line-height: 23px;
+}
+.card__svg {
+  margin-left: auto;
+  width: 57px;
+  height: 57px;
+}
+
+@media (min-width: 1025px) {
+  .card {
+    padding: 32px;
+    max-width: 350px;
+    max-height: 250px;
+  }
+  .card__heading {
+    margin-bottom: 6px;
+  }
+  .card__paragraph {
+    margin-bottom: 40px;
+  }
+  .card__svg {
+    width: 64px;
+    height: 64px;
+  }
+}/*# sourceMappingURL=main.css.map */

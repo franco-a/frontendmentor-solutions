@@ -1,0 +1,80 @@
+@use '../utils/colors' as c;
+@use '../utils/font-rules' as f;
+
+.card {
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-top: 4px solid;
+    padding: 28px;
+    border-radius: 8px;
+    max-width: 311px;
+    min-height: 222px;
+
+    &--cyan {
+        border-color: c.$cyan;
+        grid-area: c;
+    }
+
+    &--red {
+        border-color: c.$red;
+        grid-area: r;
+    }
+
+    &--orange {
+        border-color: c.$orange;
+        grid-area: o;
+    }
+
+    &--blue {
+        border-color: c.$blue;
+        grid-area: b;
+    }
+
+    &__heading,
+    &__paragraph {
+        color: c.$dark-blue;
+    }
+
+    &__heading {
+        font-weight: f.$fw-bold;
+        font-size: f.$fs-l;
+        margin-bottom: 2px;
+    }
+
+    &__paragraph {
+        font-weight: f.$fw-reg;
+        font-size: f.$fs-ms;
+        margin-bottom: 33px;
+        line-height: 23px;
+    }
+
+    &__svg {
+        margin-left: auto;
+        width: 57px;
+        height: 57px;
+    }
+}
+
+// DESKTOP
+@media (min-width: 1025px) {
+    .card {
+        padding: 32px;
+        max-width: 350px;
+        max-height: 250px;
+
+        &__heading {
+            margin-bottom: 6px;
+        }
+
+        &__paragraph {
+            margin-bottom: 40px;
+        }
+
+        &__svg {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}

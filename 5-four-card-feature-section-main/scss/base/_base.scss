@@ -1,0 +1,13 @@
+@use '../utils/colors' as c;
+@use '../utils/font-rules' as f;
+
+body {
+    background-color: c.$light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: f.$ff-primary;
+}
