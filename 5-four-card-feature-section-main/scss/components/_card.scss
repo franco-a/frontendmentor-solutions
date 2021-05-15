@@ -12,6 +12,12 @@
     max-width: 311px;
     min-height: 222px;
 
+    @media (min-width: 1025px) {
+        padding: 32px;
+        max-width: 350px;
+        max-height: 250px;
+    }
+
     &--cyan {
         border-color: c.$cyan;
         grid-area: c;
@@ -37,6 +43,10 @@
         font-weight: f.$fw-bold;
         font-size: f.$fs-l;
         margin-bottom: 2px;
+
+        @media (min-width: 1025px) {
+            margin-bottom: 6px;
+        }
     }
 
     &__paragraph {
@@ -45,31 +55,18 @@
         font-size: f.$fs-ms;
         margin-bottom: 33px;
         line-height: 23px;
+
+        @media (min-width: 1025px) {
+            margin-bottom: 40px;
+        }
     }
 
     &__svg {
         margin-left: auto;
         width: 57px;
         height: 57px;
-    }
-}
 
-// DESKTOP
-@media (min-width: 1025px) {
-    .card {
-        padding: 32px;
-        max-width: 350px;
-        max-height: 250px;
-
-        &__heading {
-            margin-bottom: 6px;
-        }
-
-        &__paragraph {
-            margin-bottom: 40px;
-        }
-
-        &__svg {
+        @media (min-width: 1025px) {
             width: 64px;
             height: 64px;
         }

@@ -9,6 +9,11 @@
     padding-top: 85px;
     padding-bottom: 78px;
 
+    @media (min-width: 1025px) {
+        padding-block: 80px;
+        padding-inline: 24px;
+    }
+
     &__heading,
     &__paragraph {
         text-align: center;
@@ -26,6 +31,10 @@
         &--bold {
             font-weight: f.$fw-bold;
         }
+
+        @media (min-width: 1025px) {
+            font-size: f.$fs-xxl;
+        }
     }
 
     &__paragraph {
@@ -34,6 +43,10 @@
         font-size: f.$fs-m;
         margin-bottom: 76px;
         max-width: 540px;
+
+        @media (min-width: 1025px) {
+            margin-bottom: 64px;
+        }
     }
 
     &__card-container {
@@ -41,23 +54,8 @@
         flex-direction: column;
         gap: 24px;
         align-items: center;
-    }
-}
 
-@media (min-width: 1025px) {
-    .feature {
-        padding-block: 80px;
-        padding-inline: 0;
-
-        &__heading {
-            font-size: f.$fs-xxl;
-        }
-
-        &__paragraph {
-            margin-bottom: 64px;
-        }
-
-        &__card-container {
+        @media (min-width: 1025px) {
             display: grid;
             grid-gap: 30px;
             grid-template-columns: repeat(3, auto);
