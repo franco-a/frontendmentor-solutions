@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../../images/bg-pattern-top-mobile.svg), url(../../images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1025px) {
+  body {
+    background-image: url(../../images/bg-pattern-top-desktop.svg), url(../../images/bg-pattern-bottom-desktop.svg);
+    height: 100%;
+  }
+}
+
+.proof {
+  font-family: "Spartan", sans-serif;
+  padding: 80px 24px 99px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1025px) {
+  .proof {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(2, 555px);
+    padding: 127px 24px 100px 24px;
+  }
+}
+.proof__intro {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 452px;
+}
+@media (min-width: 1025px) {
+  .proof__intro {
+    text-align: left;
+    padding-right: 77px;
+    margin-bottom: 72px;
+  }
+}
+.proof__header {
+  color: #502050;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+@media (min-width: 1025px) {
+  .proof__header {
+    font-size: 4.8rem;
+    line-height: 48px;
+  }
+}
+.proof__paragraph {
+  color: #937b92;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+.proof__ratings, .proof__reviews {
+  display: grid;
+  gap: 16px;
+}
+.proof__ratings {
+  margin-bottom: 49px;
+}
+@media (min-width: 1025px) {
+  .proof__ratings {
+    grid-template: repeat(3, auto)/repeat(12, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 16px;
+  }
+}
+@media (min-width: 1025px) {
+  .proof__reviews {
+    grid-column: 1/-1;
+    grid-template: repeat(12, auto)/repeat(3, auto);
+    grid-column-gap: 30px;
+    grid-row-gap: 0;
+  }
+}
+
+.rating-card {
+  background-color: #f7f2f7;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 61px;
+  max-width: 327px;
+  min-height: 78px;
+}
+@media (min-width: 1025px) {
+  .rating-card:nth-child(1) {
+    grid-column: 1/span 10;
+    grid-row: 1;
+  }
+}
+@media (min-width: 1025px) {
+  .rating-card:nth-child(2) {
+    grid-column: 2/span 10;
+    grid-row: 2;
+  }
+}
+@media (min-width: 1025px) {
+  .rating-card:nth-child(3) {
+    grid-column: 3/span 10;
+    grid-row: 3;
+  }
+}
+@media (min-width: 1025px) {
+  .rating-card {
+    max-width: 445px;
+    min-height: 56px;
+    flex-direction: row;
+    padding: 20px 60px 20px 32px;
+  }
+}
+.rating-card__star-container {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8.5px;
+}
+@media (min-width: 1025px) {
+  .rating-card__star-container {
+    margin-bottom: 0;
+    margin-right: 32px;
+  }
+}
+.rating-card__star {
+  width: 16px;
+  height: 16px;
+}
+.rating-card__target {
+  color: #502050;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.review-card {
+  background-color: #502050;
+  border-radius: 8px;
+  max-width: 327px;
+  min-height: 248px;
+  padding: 40px 32px 32px 32px;
+}
+@media (min-width: 1025px) {
+  .review-card {
+    max-width: 350px;
+    min-height: 234px;
+    padding: 40px 32px;
+  }
+}
+@media (min-width: 1025px) {
+  .review-card:nth-child(1) {
+    grid-row: 1/span 10;
+    grid-column: 1;
+  }
+}
+@media (min-width: 1025px) {
+  .review-card:nth-child(2) {
+    grid-row: 2/span 10;
+    grid-column: 2;
+  }
+}
+@media (min-width: 1025px) {
+  .review-card:nth-child(3) {
+    grid-row: 3/span 10;
+    grid-column: 3;
+  }
+}
+.review-card__user {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 26px;
+  align-items: center;
+}
+.review-card__pfp {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  margin-right: 23px;
+}
+.review-card__header {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 20px;
+}
+.review-card__header--bold {
+  font-weight: 700;
+}
+.review-card__header--regular {
+  font-weight: 400;
+}
+.review-card__header--pink {
+  color: #ee68a4;
+}
+.review-card__paragraph {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 22px;
+}/*# sourceMappingURL=main.css.map */

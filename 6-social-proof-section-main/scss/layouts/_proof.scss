@@ -1,0 +1,75 @@
+@use '../utils/colors' as c;
+@use '../utils/font-rules' as f;
+
+.proof {
+    font-family: f.$ff-primary;
+    padding: 80px 24px 99px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 1025px) {
+        display: grid;
+        grid-template: repeat(2, auto) / repeat(2, 555px);
+        padding: 127px 24px 100px 24px;
+    }
+
+    &__intro {
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 452px;
+
+        @media (min-width: 1025px) {
+            text-align: left;
+            padding-right: 77px;
+            margin-bottom: 72px;
+        }
+    }
+
+    &__header {
+        color: c.$dark-magenta;
+        font-size: f.$fs-xl;
+        font-weight: f.$fw-bold;
+        margin-bottom: 18px;
+
+        @media (min-width: 1025px) {
+            font-size: f.$fs-xxl;
+            line-height: 48px;
+        }
+    }
+
+    &__paragraph {
+        color: c.$dark-gray-magenta;
+        font-size: f.$fs-m;
+        font-weight: f.$fw-med;
+        line-height: 25px;
+    }
+
+    &__ratings,
+    &__reviews {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__ratings {
+        margin-bottom: 49px;
+
+        @media (min-width: 1025px) {
+            grid-template: repeat(3, auto) / repeat(12, auto);
+            grid-column-gap: 0px;
+            grid-row-gap: 16px;
+        }
+    }
+
+    &__reviews {
+        @media (min-width: 1025px) {
+            grid-column: 1 / -1;
+            grid-template: repeat(12, auto) / repeat(3, auto);
+            grid-column-gap: 30px;
+            grid-row-gap: 0;
+        }
+    }
+}

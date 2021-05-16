@@ -1,0 +1,64 @@
+@use '../utils/colors' as c;
+@use '../utils/font-rules' as f;
+
+.rating-card {
+    background-color: c.$light-gray-magenta;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 61px;
+    max-width: 327px;
+    min-height: 78px;
+
+    &:nth-child(1) {
+        @media (min-width: 1025px) {
+            grid-column: 1 / span 10;
+            grid-row: 1;
+        }
+    }
+
+    &:nth-child(2) {
+        @media (min-width: 1025px) {
+            grid-column: 2 / span 10;
+            grid-row: 2;
+        }
+    }
+
+    &:nth-child(3) {
+        @media (min-width: 1025px) {
+            grid-column: 3 / span 10;
+            grid-row: 3;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        max-width: 445px;
+        min-height: 56px;
+        flex-direction: row;
+        padding: 20px 60px 20px 32px;
+    }
+
+    &__star-container {
+        margin-bottom: 16px;
+        display: flex;
+        gap: 8.5px;
+
+        @media (min-width: 1025px) {
+            margin-bottom: 0;
+            margin-right: 32px;
+        }
+    }
+
+    &__star {
+        width: 16px;
+        height: 16px;
+    }
+
+    &__target {
+        color: c.$dark-magenta;
+        font-size: f.$fs-ms;
+        font-weight: f.$fw-bold;
+        text-align: center;
+    }
+}

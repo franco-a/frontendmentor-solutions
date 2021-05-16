@@ -1,0 +1,76 @@
+@use '../utils/colors' as c;
+@use '../utils/font-rules' as f;
+
+.review-card {
+    background-color: c.$dark-magenta;
+    border-radius: 8px;
+    max-width: 327px;
+    min-height: 248px;
+    padding: 40px 32px 32px 32px;
+
+    @media (min-width: 1025px) {
+        max-width: 350px;
+        min-height: 234px;
+        padding: 40px 32px;
+    }
+
+    &:nth-child(1) {
+        @media (min-width: 1025px) {
+            grid-row: 1 / span 10;
+            grid-column: 1;
+        }
+    }
+
+    &:nth-child(2) {
+        @media (min-width: 1025px) {
+            grid-row: 2 / span 10;
+            grid-column: 2;
+        }
+    }
+
+    &:nth-child(3) {
+        @media (min-width: 1025px) {
+            grid-row: 3 / span 10;
+            grid-column: 3;
+        }
+    }
+
+    &__user {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 26px;
+        align-items: center;
+    }
+
+    &__pfp {
+        height: 40px;
+        width: 40px;
+        border-radius: 100%;
+        margin-right: 23px;
+    }
+
+    &__header {
+        color: c.$white;
+        font-size: f.$fs-ms;
+        line-height: 20px;
+
+        &--bold {
+            font-weight: f.$fw-bold;
+        }
+
+        &--regular {
+            font-weight: f.$fw-reg;
+        }
+
+        &--pink {
+            color: c.$soft-pink;
+        }
+    }
+
+    &__paragraph {
+        color: c.$white;
+        font-size: f.$fs-ms;
+        font-weight: f.$fw-med;
+        line-height: 22px;
+    }
+}
