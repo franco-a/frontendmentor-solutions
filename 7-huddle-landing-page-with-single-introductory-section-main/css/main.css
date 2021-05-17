@@ -84,6 +84,7 @@ body {
 }
 @media (min-width: 1025px) {
   .hero__intro {
+    text-align: left;
     margin-left: 59px;
     margin-top: 212px;
   }
