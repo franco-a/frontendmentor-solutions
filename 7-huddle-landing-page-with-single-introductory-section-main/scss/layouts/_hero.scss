@@ -1,0 +1,101 @@
+@use '../utils/font-rules' as f;
+
+.hero {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+
+    @media (min-width: 1025px) {
+        flex-direction: row;
+        padding: 40px 80px;
+    }
+
+    &__graphics {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__logo {
+        align-self: flex-start;
+        max-width: 120px;
+        max-height: 30px;
+        margin-bottom: 64px;
+        margin-top: 33px;
+
+        @media (min-width: 1025px) {
+            max-width: 200px;
+            max-height: 60px;
+            margin-top: 0;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__illustration {
+        width: 80vw;
+        max-width: 296px;
+        min-height: 209px;
+        margin-bottom: 60px;
+
+        @media (min-width: 1025px) {
+            width: 100%;
+            max-width: 696px;
+        }
+    }
+
+    &__intro {
+        text-align: center;
+
+        @media (min-width: 1025px) {
+            margin-left: 59px;
+            margin-top: 212px;
+        }
+    }
+
+    &__header {
+        font-family: f.$ff-primary;
+        font-size: f.$fs-l;
+        font-weight: f.$fw-bold;
+        line-height: 36px;
+        margin-bottom: 16px;
+        max-width: 20ch;
+
+        @media (min-width: 1025px) {
+            font-size: f.$fs-xl;
+            line-height: 60px;
+            margin-bottom: 24px;
+        }
+    }
+
+    &__paragraph {
+        font-family: f.$ff-secondary;
+        font-size: f.$fs-m;
+        font-weight: f.$fw-reg;
+        line-height: 24px;
+        margin-bottom: 24px;
+        max-width: 35ch;
+
+        @media (min-width: 1025px) {
+            font-size: f.$fs-ml;
+            line-height: 27px;
+            max-width: 50ch;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 64px;
+        gap: 10.5px;
+
+        @media (min-width: 1025px) {
+        display: flex;
+        justify-content: flex-end;
+        gap: 16px;
+        margin-top: 183px;
+        }
+    }
+}

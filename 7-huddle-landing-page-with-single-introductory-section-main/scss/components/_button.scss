@@ -1,0 +1,25 @@
+@use '../utils/colors' as c;
+@use '../utils/font-rules' as f;
+
+.button {
+    display: inline-flex;
+    box-shadow: 0 4px 4px rgba($color: #000, $alpha: 0.25);
+    background-color: #fff;
+    border-radius: 20px;
+    color: c.$violet;
+    font-family: f.$ff-primary;
+    font-weight: f.$fw-reg;
+    font-size: f.$fs-s;
+    padding: 11px 75px;
+    width: fit-content;
+
+    &:hover {
+        background-color: c.$soft-magenta;
+        color: #fff;
+    }
+
+    @media (min-width: 1025px) {
+        font-size: f.$fs-ml;
+        border-radius: 28px;
+    }
+}

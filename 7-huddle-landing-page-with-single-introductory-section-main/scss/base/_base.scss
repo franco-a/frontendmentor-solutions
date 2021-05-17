@@ -1,0 +1,17 @@
+@use '../utils/colors' as c;
+
+body {
+    background-color: c.$violet;
+    background-image: url(../../images/bg-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: auto;
+    width: 100%;
+
+    @media (min-width: 1025px) {
+        height: 100%;
+        background-image: url(../../images/bg-desktop.svg);
+        background-size: 100% 100%;
+    }
+}
