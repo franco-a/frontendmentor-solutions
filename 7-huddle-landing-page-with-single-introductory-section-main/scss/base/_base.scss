@@ -4,8 +4,9 @@ body {
     background-color: c.$violet;
     background-image: url(../../images/bg-mobile.svg);
     background-size: 100%;
-    background-repeat: no-repeat;
     background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height: auto;
     width: 100%;
     display: flex;
@@ -15,6 +16,6 @@ body {
     @media (min-width: 1025px) {
         height: 100%;
         background-image: url(../../images/bg-desktop.svg);
-        background-size: 100% 100%;
+        background-size: cover;
     }
 }
