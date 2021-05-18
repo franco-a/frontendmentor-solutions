@@ -1,0 +1,18 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/font-rules' as f;
+
+html,
+body {
+    background-color: c.$light-grayish-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-family: f.$ff-primary;
+    font-size: 62.5%;
+
+    @media (min-width: 1025px) {
+        height: 100%;       
+    }
+}

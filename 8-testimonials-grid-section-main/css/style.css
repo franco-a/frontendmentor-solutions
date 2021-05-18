@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Note for text colors:
+1. "Verified Graduate" has the same color as the person's name with 50% opacity
+2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity
+*/
+html,
+body {
+  background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 62.5%;
+}
+@media (min-width: 1025px) {
+  html,
+body {
+    height: 100%;
+  }
+}
+
+.card {
+  padding: 26px 32px 32px 32px;
+  border-radius: 8px;
+  max-width: 327px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+@media (min-width: 1025px) {
+  .card {
+    max-width: 255px;
+    height: 100%;
+  }
+  .card--one {
+    grid-area: one;
+  }
+  .card--two {
+    grid-area: two;
+  }
+  .card--three {
+    grid-area: three;
+  }
+  .card--four {
+    grid-area: four;
+  }
+  .card--five {
+    grid-area: five;
+  }
+}
+.card__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 18px;
+}
+.card__pfp {
+  border-radius: 100%;
+  max-width: 28px;
+  max-height: 28px;
+  margin-right: 17px;
+}
+.card__pfp--bordered {
+  border: 2px solid #A775F1;
+}
+.card__name, .card__status .card__paragraph {
+  font-weight: 500;
+}
+.card__name {
+  font-size: 1.3rem;
+}
+.card__status {
+  font-size: 1.1rem;
+  opacity: 50%;
+}
+.card__header {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+.card__paragraph {
+  font-size: 1.3rem;
+  line-height: 18px;
+  opacity: 70%;
+}
+.card--violet {
+  background-color: #7541c8;
+  background-image: url(../../images/bg-pattern-quotation.svg);
+  background-position: 90% 0%;
+  background-repeat: no-repeat;
+}
+.card--gray {
+  background-color: #48556a;
+}
+.card--black {
+  background: #19212e;
+}
+.card--white {
+  background: white;
+}
+.card--dark {
+  color: white;
+}
+.card--light {
+  color: #19212e;
+}
+@media (min-width: 1025px) {
+  .card--wide {
+    max-width: 540px;
+  }
+}
+@media (min-width: 1025px) {
+  .card--long {
+    min-height: 572px;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  /* added line */
+  border: 0;
+}
+
+.testimonials {
+  display: grid;
+  justify-content: center;
+  gap: 24px;
+  padding: 72px 24px;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1025px) {
+  .testimonials {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, auto);
+    grid-row-gap: 24px;
+    grid-column-gap: 30px;
+    grid-template-areas: "one one two five" "three four four five";
+  }
+}/*# sourceMappingURL=style.css.map */

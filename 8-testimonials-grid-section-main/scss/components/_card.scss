@@ -1,0 +1,119 @@
+@use '../abstracts/colors' as c;
+@use '../abstracts/font-rules' as f;
+
+.card {
+    padding: 26px 32px 32px 32px;
+    border-radius: 8px;
+    max-width: 327px;
+    height: fit-content;
+
+    @media (min-width: 1025px) {
+        max-width: 255px;
+        height: 100%;
+
+        &--one{
+            grid-area: one;
+        }
+
+        &--two{
+            grid-area: two;
+        }
+
+        &--three{
+            grid-area: three;
+        }
+
+        &--four{
+            grid-area: four;
+        }
+
+        &--five{
+            grid-area: five;
+        }
+    }
+
+    &__top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+
+    &__pfp {
+        border-radius: 100%;
+        max-width: 28px;
+        max-height: 28px;
+        margin-right: 17px;
+
+        &--bordered {
+            border: 2px solid c.$light-violet;
+        }
+    }
+
+    &__name,
+    &__status
+    &__paragraph {
+        font-weight: f.$fw-medium;
+    }
+
+    &__name {
+        font-size: f.$fs-ms;
+    }
+
+    &__status {
+        font-size: f.$fs-s;
+        opacity: 50%;
+    }
+
+    &__header {
+        font-size: f.$fs-ml;
+        font-weight: f.$fw-semi-bold;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+
+    &__paragraph {
+        font-size: f.$fs-ms;
+        line-height: 18px;
+        opacity: 70%;
+    }
+
+    &--violet {
+        background-color: c.$moderate-violet;
+        background-image: url(../../images/bg-pattern-quotation.svg);
+        background-position: 90% 0%;
+        background-repeat: no-repeat;
+    }
+
+    &--gray {
+        background-color: c.$very-dark-grayish-blue;
+    }
+
+    &--black {
+        background: c.$very-dark-blackish-blue;
+    }
+
+    &--white {
+        background: c.$white;
+    }
+
+    &--dark {
+        color: c.$white;
+    }
+
+    &--light {
+        color: c.$very-dark-blackish-blue;
+    }
+
+    &--wide {
+        @media (min-width: 1025px) {
+            max-width: 540px;
+        }
+    }
+
+    &--long {
+        @media (min-width: 1025px) {
+            min-height: 572px;
+        }
+    }
+}
