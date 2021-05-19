@@ -36,6 +36,24 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
+@media (min-width: 768px) {
+  .card {
+    height: 100%;
+    min-height: 223px;
+    max-width: 900px;
+  }
+  .card--one {
+    grid-column: 1/span 2;
+  }
+  .card--four {
+    grid-row: 3;
+    grid-column: 2;
+  }
+  .card--five {
+    grid-row: 3;
+    grid-column: 1;
+  }
+}
 @media (min-width: 1025px) {
   .card {
     max-width: 255px;
@@ -145,6 +163,12 @@ body {
   padding: 72px 24px;
   width: 100%;
   height: auto;
+}
+@media (min-width: 769px) {
+  .testimonials {
+    grid-template-columns: repeat(2, minmax(200px, 400px));
+    grid-template-rows: repeat(3, auto);
+  }
 }
 @media (min-width: 1025px) {
   .testimonials {

@@ -7,6 +7,26 @@
     max-width: 327px;
     height: fit-content;
 
+    @media (min-width: 768px) {
+        height: 100%;
+        min-height: 223px;
+        max-width: 900px;
+
+        &--one {
+            grid-column: 1 / span 2;
+        }
+
+        &--four {
+            grid-row: 3;
+            grid-column: 2;
+        }
+
+        &--five {
+            grid-row: 3;
+            grid-column: 1;
+        }
+    }
+
     @media (min-width: 1025px) {
         max-width: 255px;
         height: 100%;

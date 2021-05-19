@@ -5,6 +5,11 @@
     padding: 72px 24px;
     width: 100%;
     height: auto;
+
+    @media (min-width: 769px) {
+        grid-template-columns: repeat(2, minmax(200px, 400px));
+        grid-template-rows: repeat(3, auto);
+    }
     
     @media (min-width: 1025px) {
         grid-template-rows: repeat(2, auto); 
