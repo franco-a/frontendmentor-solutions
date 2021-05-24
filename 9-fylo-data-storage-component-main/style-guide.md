@@ -25,7 +25,6 @@ The designs were created to the following widths:
 ### Body Copy
 
 - Font size: 14px
-
 ### Font
 
 - Family: [Raleway](https://fonts.google.com/specimen/Raleway)

@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.data-display {
+  background-image: url(../../images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: $very-dark-blue;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 24px;
+}
